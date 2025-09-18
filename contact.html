@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Ember & Leaf Coffee - Contact</title>
+  <meta name='description' content='Contact Ember & Leaf Coffee. Get in touch with us.'>
+  <link rel='icon' href='https://images.unsplash.com/photo-1698655123292-27d07e8f9754?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw2fHxjb2ZmZWUlMjBiZWFuJTIwaWNvbnxlbnwwfDB8fHwxNzU4MTcwOTA5fDA&ixlib=rb-4.1.0&q=80&w=1080'>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <script>tailwind.config={darkMode:'class'};</script>
+</head>
+<body class='bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100'>
+  <header class='sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 border-b border-gray-200'>
+    <nav class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div class='flex items-center justify-between h-16'>
+        <a href='index.html' class='flex items-center space-x-2'>
+          <span class='w-6 h-6 rounded-full bg-amber-500 inline-block'></span>
+          <span class='font-semibold'>Ember & Leaf</span>
+        </a>
+        <button id='themeToggle' aria-label='Toggle dark mode' class='p-2 rounded-md bg-gray-100'>☀️</button>
+      </div>
+    </nav>
+  </header>
+  <main class='max-w-4xl mx-auto px-4 py-8'>
+    <section aria-labelledby='contact-title' class='mb-6'>
+      <h1 id='contact-title' class='text-3xl font-extrabold'>Contact Us</h1>
+      <p class='text-gray-700 dark:text-gray-300'>Have a question or want to visit? Send us a message.</p>
+    </section>
+    <form class='grid grid-cols-1 md:grid-cols-2 gap-6'>
+      <input type='text' placeholder='Your name' aria-label='Name' class='px-3 py-2 rounded-md border'>
+      <input type='email' placeholder='Email' aria-label='Email' class='px-3 py-2 rounded-md border'>
+      <input type='tel' placeholder='Phone' aria-label='Phone' class='col-span-2 px-3 py-2 rounded-md border'>
+      <textarea placeholder='Your message' aria-label='Message' class='col-span-2 px-3 py-2 h-40 rounded-md border'></textarea>
+      <button type='submit' class='col-span-2 px-6 py-2 bg-amber-500 text-white rounded-md'>Send Message</button>
+    </form>
+  </main>
+  <footer class='bg-gray-900 text-gray-100 py-8'>
+    <div class='max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8'>
+      <div>
+        <h3 class='text-xl font-semibold'>Ember & Leaf</h3>
+        <p class='text-sm mt-2'>Nadargul, Telangana</p>
+      </div>
+      <nav class='space-y-2'>
+        <a href='index.html' class='block hover:underline'>Home</a>
+        <a href='menu.html' class='block hover:underline'>Menu</a>
+        <a href='blog.html' class='block hover:underline'>Blog</a>
+      </nav>
+      <form class='space-y-2'>
+        <input type='email' placeholder='Your email' class='w-full px-3 py-2 rounded-md'>
+        <button class='w-full px-3 py-2 bg-amber-500 text-white rounded-md'>Subscribe</button>
+      </form>
+    </div>
+    <hr class='border-t border-gray-700 mt-6'>
+    <p class='text-center text-sm mt-2'>&copy; 2025 Ember & Leaf Coffee</p>
+  </footer>
+  <div id='toast' aria-live='polite' class='fixed bottom-4 right-4'></div>
+  <div id='cartModal' class='hidden fixed inset-0 bg-black/60 items-center justify-center z-50'>
+    <div class='bg-white dark:bg-gray-800 rounded-lg p-4 w-full max-w-md'>
+      <h4 class='font-semibold mb-2'>Cart Preview</h4>
+      <p class='text-sm text-gray-600'>Cart is empty.</p>
+      <button id='closeCart' class='mt-4 w-full px-3 py-2 bg-gray-200 rounded-md'>Close</button>
+    </div>
+  </div>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <script>tailwind.config={darkMode:'class'};document.getElementById('themeToggle')?.addEventListener('click',()=>document.documentElement.classList.toggle('dark'));</script>
+</body>
+</html>
