@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Ember & Leaf Coffee - Blog</title>
+  <meta name='description' content='Coffee tips, brewing guides, and lifestyle posts.'>
+  <link rel='icon' href='https://images.unsplash.com/photo-1647960325995-d2635727f115?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw5fHxjb2ZmZWUlMjBiZWFuJTIwaWNvbnxlbnwwfDB8fHwxNzU4MTcwOTA5fDA&ixlib=rb-4.1.0&q=80&w=1080'>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <script>tailwind.config={darkMode:'class'};</script>
+</head>
+<body class='bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100'>
+  <header class='sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 border-b border-gray-200'>
+    <nav class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div class='flex items-center justify-between h-16'>
+        <a href='index.html' class='flex items-center space-x-2'>
+          <span class='w-6 h-6 rounded-full bg-amber-500 inline-block'></span>
+          <span class='font-semibold'>Ember & Leaf</span>
+        </a>
+        <div class='hidden md:flex items-center gap-4'>
+          <a href='index.html' class='text-gray-700 hover:text-amber-600'>Home</a>
+          <a href='about.html' class='text-gray-700 hover:text-amber-600'>About</a>
+          <a href='menu.html' class='text-gray-700 hover:text-amber-600'>Menu</a>
+          <a href='blog.html' class='text-gray-700 hover:text-amber-600'>Blog</a>
+          <a href='contact.html' class='text-gray-700 hover:text-amber-600'>Contact</a>
+        </div>
+        <button id='themeToggle' aria-label='Toggle dark mode' class='p-2 rounded-md bg-gray-100'>☀️</button>
+      </div>
+    </nav>
+  </header>
+  <main class='max-w-5xl mx-auto px-4 py-8'>
+    <section aria-labelledby='blog-title' class='mb-6'>
+      <h1 id='blog-title' class='text-3xl font-extrabold'>Coffee Blog</h1>
+      <p class='text-gray-700 dark:text-gray-300'>Tips, guides, and stories for coffee lovers.</p>
+    </section>
+    <section class='mb-4'>
+      <div class='flex justify-center mb-4'>
+        <input type='search' placeholder='Search posts...' aria-label='Search blog' class='w-full max-w-xl px-3 py-2 border rounded-md'>
+      </div>
+    </section>
+    <section class='grid grid-cols-1 md:grid-cols-2 gap-6'>
+      <article class='bg-white dark:bg-gray-800 rounded-lg p-5 shadow hover:shadow-xl transition-all'>
+        <img src="https://images.unsplash.com/photo-1678569187178-eab3ece6f778?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3ODkyNDZ8MHwxfHNlYXJjaHw1fHxsYXR0ZSUyMGFydCUyMGNsb3NlLXVwfGVufDB8MHx8fDE3NTgxNzA5MDl8MA&ixlib=rb-4.1.0&q=80&w=1080" alt='Latte art' class='w-full h-40 object-cover rounded mb-2'>
+        <h2 class='font-semibold'>How to Brew the Perfect Espresso</h2>
+        <p class='text-sm text-gray-600'>Step-by-step techniques for a rich, balanced shot.</p>
+      </article>
+      <article class='bg-white dark:bg-gray-800 rounded-lg p-5 shadow hover:shadow-xl transition-all'>
+        <img src="https://images.pexels.com/photos/1557686/pexels-photo-1557686.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt='Cold brew glass' class='w-full h-40 object-cover rounded mb-2'>
+        <h2 class='font-semibold'>Cold Brew vs. Iced Coffee</h2>
+        <p class='text-sm text-gray-600'>Key differences and when to choose each.</p>
+      </article>
+    </section>
+  </main>
+  <footer class='bg-gray-900 text-gray-100 py-8'>
+    <div class='max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8'>
+      <div>
+        <h3 class='text-xl font-semibold'>Newsletter</h3>
+        <p class='text-sm mt-2'>Get weekly coffee tips.</p>
+        <form class='mt-2'>
+          <input type='email' placeholder='Your email' class='w-full px-3 py-2 rounded-md'>
+          <button class='mt-2 w-full px-3 py-2 bg-amber-500 text-white rounded-md'>Subscribe</button>
+        </form>
+      </div>
+      <nav class='space-y-2'>
+        <a href='index.html' class='block hover:underline'>Home</a>
+        <a href='menu.html' class='block hover:underline'>Menu</a>
+        <a href='contact.html' class='block hover:underline'>Contact</a>
+      </nav>
+      <div></div>
+    </div>
+    <hr class='border-t border-gray-700 mt-6'>
+    <p class='text-center text-sm mt-2'>&copy; 2025 Ember & Leaf Coffee</p>
+  </footer>
+  <div id='toast' aria-live='polite' class='fixed bottom-4 right-4'></div>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <script>tailwind.config={darkMode:'class'};document.getElementById('themeToggle')?.addEventListener('click',()=>document.documentElement.classList.toggle('dark'));</script>
+</body>
+</html>
