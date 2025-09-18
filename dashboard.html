@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Ember & Leaf Coffee - Dashboard</title>
+  <meta name='description' content='User dashboard with profile, addresses, orders, and subscription details.'>
+  <link rel='icon' href='https://images.pexels.com/photos/942732/pexels-photo-942732.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <script>tailwind.config={darkMode:'class'};</script>
+</head>
+<body class='bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100'>
+  <header class='sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 border-b border-gray-200'>
+    <nav class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div class='flex items-center justify-between h-16'>
+        <a href='index.html' class='flex items-center space-x-2'>
+          <span class='w-6 h-6 rounded-full bg-amber-500 inline-block'></span>
+          <span class='font-semibold'>Ember & Leaf</span>
+        </a>
+        <button id='themeToggle' aria-label='Toggle dark mode' class='p-2 rounded-md bg-gray-100'>☀️</button>
+      </div>
+    </nav>
+  </header>
+  <main class='max-w-6xl mx-auto px-4 py-8'>
+    <section aria-labelledby='dashboard-title' class='mb-6'>
+      <h1 id='dashboard-title' class='text-3xl font-extrabold'>Your Dashboard</h1>
+      <p class='text-gray-700 dark:text-gray-300'>Manage profile, addresses, orders, and subscriptions.</p>
+    </section>
+    <section class='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6'>
+      <div class='bg-white dark:bg-gray-800 rounded-lg p-5 shadow'>
+        <h3 class='font-semibold'>Profile</h3>
+        <p class='text-sm text-gray-600'>Name, email, preferences</p>
+      </div>
+      <div class='bg-white dark:bg-gray-800 rounded-lg p-5 shadow'>
+        <h3 class='font-semibold'>Addresses</h3>
+        <p class='text-sm text-gray-600'>Saved locations</p>
+      </div>
+      <div class='bg-white dark:bg-gray-800 rounded-lg p-5 shadow'>
+        <h3 class='font-semibold'>Subscriptions</h3>
+        <p class='text-sm text-gray-600'>Active plans</p>
+      </div>
+    </section>
+  </main>
+  <footer class='bg-gray-900 text-gray-100 py-8'>
+    <p class='text-center text-sm'>© 2025 Ember & Leaf Coffee</p>
+  </footer>
+  <div id='toast' aria-live='polite' class='fixed bottom-4 right-4'></div>
+  <script>document.getElementById('themeToggle')?.addEventListener('click',()=>document.documentElement.classList.toggle('dark'));</script>
+  <script src='https://cdn.tailwindcss.com'></script>
+</body>
+</html>
