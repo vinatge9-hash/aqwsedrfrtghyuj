@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Ember & Leaf Coffee - Menu</title>
+  <meta name='description' content='Shop coffee beans, ground coffee, and brewing accessories.'>
+  <link rel='icon' href='https://images.pexels.com/photos/6205600/pexels-photo-6205600.jpeg?auto=compress&cs=tinysrgb&h=650&w=940'>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <script>tailwind.config={darkMode:'class'};</script>
+</head>
+<body class='bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100'>
+  <header class='sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 border-b border-gray-200'>
+    <nav class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div class='flex items-center justify-between h-16'>
+        <a href='index.html' class='flex items-center space-x-2'>
+          <span class='w-6 h-6 rounded-full bg-amber-500 inline-block'></span>
+          <span class='font-semibold'>Ember & Leaf</span>
+        </a>
+        <div class='hidden md:flex items-center gap-4'>
+          <a href='index.html' class='text-gray-700 hover:text-amber-600'>Home</a>
+          <a href='about.html' class='text-gray-700 hover:text-amber-600'>About</a>
+          <a href='menu.html' class='text-gray-700 hover:text-amber-600'>Menu</a>
+          <a href='blog.html' class='text-gray-700 hover:text-amber-600'>Blog</a>
+          <a href='contact.html' class='text-gray-700 hover:text-amber-600'>Contact</a>
+        </div>
+        <button id='themeToggle' aria-label='Toggle dark mode' class='p-2 rounded-md bg-gray-100'>☀️</button>
+      </div>
+    </nav>
+  </header>
+  <main class='max-w-6xl mx-auto px-4 py-8'>
+    <section class='mb-6'>
+      <h1 class='text-3xl font-extrabold'>Shop Our Coffee & Accessories</h1>
+      <p class='text-gray-700 dark:text-gray-300'>Browse our selection and add items to your cart.</p>
+    </section>
+    <section class='mb-4'>
+      <div class='flex items-center justify-center'>
+        <input type='search' placeholder='Search products...' aria-label='Search products' class='w-full max-w-xl px-3 py-2 border rounded-md'>
+      </div>
+    </section>
+    <section class='grid grid-cols-1 md:grid-cols-3 gap-6'>
+      <!-- Product 1 -->
+      <article class='bg-white dark:bg-gray-800 rounded-lg shadow-md p-4'>
+        <img src="https://pixabay.com/get/ga37cda1837389c41ace7f76f947a20f89552f8b35ea5a28a3b8e32aa3964b423c63d23cabe251defabc17f6e380ed0cf85af1f11ff5ab658bec31094ad5cc274_640.jpg" alt='Espresso Beans 250g' class='w-full h-40 object-cover rounded'>
+        <h3 class='mt-2 font-semibold'>Espresso Beans 250g</h3>
+        <p class='text-sm text-gray-600'>Roasted for rich, full-bodied espresso.</p>
+        <div class='flex items-center justify-between mt-2'>
+          <span class='font-bold'>₹420</span>
+          <button class='px-3 py-2 bg-amber-500 text-white rounded-md transition-all duration-300 hover:scale-105'>Add to Cart</button>
+        </div>
+      </article>
+      <!-- Product 2 -->
+      <article class='bg-white dark:bg-gray-800 rounded-lg shadow-md p-4'>
+        <img src="https://pixabay.com/get/g6ec8006461e7cca407ea23fa6bc682782ebe816ae01299c579467ef9338bf0350f425130cfa87f4867070926e9b56fa1_640.jpg" alt='Ground Coffee 500g' class='w-full h-40 object-cover rounded'>
+        <h3 class='mt-2 font-semibold'>Ground Coffee 500g</h3>
+        <p class='text-sm text-gray-600'>Balanced for smooth pour-over or French press.</p>
+        <div class='flex items-center justify-between mt-2'>
+          <span class='font-bold'>₹360</span>
+          <button class='px-3 py-2 bg-amber-500 text-white rounded-md transition-all duration-300 hover:scale-105'>Add to Cart</button>
+        </div>
+      </article>
+      <!-- Product 3 -->
+      <article class='bg-white dark:bg-gray-800 rounded-lg shadow-md p-4'>
+        <img src="https://pixabay.com/get/gffc18cd41a725ac92d9245da873823295c2d45aa3b83c42321b3851906da3ec0d2ce068d07b3ef82ed0c8d433a5d4d32_640.jpg" alt='Brewing Accessories Kit' class='w-full h-40 object-cover rounded'>
+        <h3 class='mt-2 font-semibold'>Brewing Accessories Kit</h3>
+        <p class='text-sm text-gray-600'>Everything you need for a great cup at home.</p>
+        <div class='flex items-center justify-between mt-2'>
+          <span class='font-bold'>₹990</span>
+          <button class='px-3 py-2 bg-amber-500 text-white rounded-md transition-all duration-300 hover:scale-105'>Add to Cart</button>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer class='bg-gray-900 text-gray-100 py-8'>
+    <div class='max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8'>
+      <div>
+        <h3 class='text-xl font-semibold'>Ember & Leaf</h3>
+        <p class='text-sm mt-2'>Nadargul, Telangana</p>
+      </div>
+      <nav class='space-y-2'>
+        <a href='index.html' class='block hover:underline'>Home</a>
+        <a href='menu.html' class='block hover:underline'>Menu</a>
+        <a href='blog.html' class='block hover:underline'>Blog</a>
+      </nav>
+      <form class='space-y-2'>
+        <input type='email' placeholder='Your email' class='w-full px-3 py-2 rounded-md'>
+        <button class='w-full px-3 py-2 bg-amber-500 text-white rounded-md'>Subscribe</button>
+      </form>
+    </div>
+    <hr class='border-t border-gray-700 mt-6'>
+    <p class='text-center text-sm mt-2'>&copy; 2025 Ember & Leaf Coffee</p>
+  </footer>
+  <div id='toast' aria-live='polite' class='fixed bottom-4 right-4'></div>
+  <div id='cartModal' class='hidden fixed inset-0 bg-black/60 items-center justify-center z-50'>
+    <div class='bg-white dark:bg-gray-800 rounded-lg p-4 w-full max-w-md'>
+      <h4 class='font-semibold mb-2'>Cart Preview</h4>
+      <p class='text-sm text-gray-600'>Cart is empty.</p>
+      <button id='closeCart' class='mt-4 w-full px-3 py-2 bg-gray-200 rounded-md'>Close</button>
+    </div>
+  </div>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <script>tailwind.config={darkMode:'class'};document.getElementById('themeToggle')?.addEventListener('click',()=>document.documentElement.classList.toggle('dark'));</script>
+</body>
+</html>
