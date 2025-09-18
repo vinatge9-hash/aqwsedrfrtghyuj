@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Ember & Leaf Coffee - Home</title>
+  <meta name='description' content='Cozy cafe brand with beans, roastery, subscriptions, blog, and more.'>
+  <link rel='icon' href='https://pixabay.com/get/g57134cc2696afa25a62ca6d24532117e8aad4445d7bb690668a569f25a70c2ab3bb65e7196f3dc56d16493d556240337af990c40737dbfc561c877e1fe38edc5_640.jpg'>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <script>tailwind.config={darkMode:'class'}</script>
+</head>
+<body class='bg-white text-gray-900 transition-colors duration-300'>
+  <!-- Header / Navbar -->
+  <header class='sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 backdrop-blur border-b border-gray-200 dark:border-gray-800'>
+    <nav class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div class='flex items-center justify-between h-16'>
+        <a href='index.html' class='flex items-center space-x-2' aria-label='Ember & Leaf Home'>
+          <span class='w-6 h-6 rounded-full bg-amber-500 inline-block'></span>
+          <span class='font-semibold text-xl'>Ember & Leaf</span>
+        </a>
+        <div class='hidden md:flex items-center gap-4'>
+          <a href='index.html' class='text-gray-700 hover:text-amber-600 transition-all duration-300'>Home</a>
+          <a href='about.html' class='text-gray-700 hover:text-amber-600 transition-all duration-300'>About</a>
+          <a href='menu.html' class='text-gray-700 hover:text-amber-600 transition-all duration-300'>Menu</a>
+          <a href='blog.html' class='text-gray-700 hover:text-amber-600 transition-all duration-300'>Blog</a>
+          <a href='contact.html' class='text-gray-700 hover:text-amber-600 transition-all duration-300'>Contact</a>
+          <a href='login.html' class='border border-amber-500 text-amber-500 px-3 py-2 rounded-md'>Login</a>
+        </div>
+        <div class='flex items-center gap-2'>
+          <button id='themeToggle' aria-label='Toggle dark mode' class='p-2 rounded-md bg-gray-100 dark:bg-gray-800'>☀️</button>
+          <button id='openCart' class='p-2 rounded-md bg-gray-100 dark:bg-gray-800' aria-label='Open cart'>🛒</button>
+        </div>
+        <button id='mobileMenuButton' class='md:hidden p-2 rounded-md bg-gray-100' aria-label='Open menu'>☰</button>
+      </div>
+      <div id='mobileMenu' class='md:hidden hidden pb-4'>
+        <a href='index.html' class='block py-2'>Home</a>
+        <a href='about.html' class='block py-2'>About</a>
+        <a href='menu.html' class='block py-2'>Menu</a>
+        <a href='blog.html' class='block py-2'>Blog</a>
+        <a href='contact.html' class='block py-2'>Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class='relative min-h-screen bg-fixed'>
+    <div class='absolute inset-0 bg-[url("https://images.pexels.com/photos/583014/pexels-photo-583014.jpeg?auto=compress&cs=tinysrgb&h=650&w=940 ")] bg-center bg-cover'></div>
+    <div class='absolute inset-0 bg-black/40'></div>
+    <div class='relative z-10 flex items-center justify-center min-h-screen'>
+      <div class='text-center text-white px-4'>
+        <h1 class='text-4xl md:text-6xl font-extrabold leading-tight mb-4'>Ember & Leaf<br><span class='text-amber-300'>Brewed with Passion</span></h1>
+        <p class='max-w-2xl mx-auto text-lg md:text-xl text-gray-100/90'>Small-batch roastery and cozy cafe in Nadargul. Handcrafted coffee, warm moments.</p>
+        <div class='mt-8 flex flex-wrap justify-center gap-4'>
+          <a href='menu.html' class='px-6 py-3 bg-amber-500 text-white rounded-md hover:brightness-110 hover:scale-105 transition-all duration-300'>Shop</a>
+          <a href='about.html' class='px-6 py-3 border border-amber-300 text-amber-300 rounded-md hover:bg-amber-50 hover:scale-105 transition-all duration-300'>Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class='py-16 bg-gray-50 dark:bg-gray-900'>
+    <div class='max-w-7xl mx-auto px-4'>
+      <span class='inline-block px-3 py-1 rounded-full bg-amber-100 text-amber-700 text-sm'>Testimonials</span>
+      <h2 class='text-2xl md:text-3xl font-semibold mt-2'>What Our Clients Say</h2>
+      <div class='grid grid-cols-1 md:grid-cols-3 gap-8 mt-6'>
+        <article class='bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:scale-[1.03] hover:shadow-xl transition-all duration-300'>
+          <div class='text-yellow-500 mb-2'>★★★★★</div>
+          <p class='text-gray-700 dark:text-gray-200'>"A warm welcome and a perfect cup each time. The aroma fills the space."</p>
+          <p class='mt-3 font-semibold'>Aditi, Nadargul</p>
+          <p class='text-sm text-gray-500'>Telangana</p>
+        </article>
+        <article class='bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:scale-[1.03] hover:shadow-xl transition-all duration-300'>
+          <div class='text-yellow-500 mb-2'>★★★★★</div>
+          <p class='text-gray-700 dark:text-gray-200'>"Roast level and flavor profile are consistently great."</p>
+          <p class='mt-3 font-semibold'>Neha, Hyderabad</p>
+          <p class='text-sm text-gray-500'>Telangana</p>
+        </article>
+        <article class='bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 hover:scale-[1.03] hover:shadow-xl transition-all duration-300'>
+          <div class='text-yellow-500 mb-2'>★★★★★</div>
+          <p class='text-gray-700 dark:text-gray-200'>"A neighborhood staple with amazing beans and service."</p>
+          <p class='mt-3 font-semibold'>Vikram, Secunderabad</p>
+          <p class='text-sm text-gray-500'>Telangana</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class='bg-gray-900 text-gray-100'>
+    <div class='max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 md:grid-cols-3 gap-8'>
+      <div>
+        <h3 class='text-xl font-semibold'>Ember & Leaf Coffee</h3>
+        <p class='text-sm mt-2'>Nadargul, Telangana</p>
+        <p class='text-sm mt-2'>Open daily 7am - 7pm</p>
+        <div class='flex space-x-3 mt-4'>
+          <span class='text-gray-400'>IG</span>
+          <span class='text-gray-400'>FB</span>
+          <span class='text-gray-400'>X</span>
+        </div>
+      </div>
+      <nav class='space-y-2'>
+        <a href='index.html' class='block hover:underline'>Home</a>
+        <a href='menu.html' class='block hover:underline'>Menu</a>
+        <a href='blog.html' class='block hover:underline'>Blog</a>
+        <a href='contact.html' class='block hover:underline'>Contact</a>
+      </nav>
+      <form class='space-y-2'>
+        <input type='email' placeholder='Your email' class='w-full px-3 py-2 rounded-md'>
+        <button class='w-full px-3 py-2 bg-amber-500 text-white rounded-md'>Subscribe</button>
+      </form>
+    </div>
+    <hr class='border-t border-gray-700'>
+    <p class='text-center text-sm py-3'>&copy; 2025 Ember & Leaf Coffee</p>
+  </footer>
+
+  <!-- Modals / Toasts -->
+  <div id='cartModal' class='hidden fixed inset-0 bg-black/60 items-center justify-center z-50'>
+    <div class='bg-white dark:bg-gray-800 rounded-lg p-4 w-full max-w-md'>
+      <h4 class='font-semibold mb-2'>Cart Preview</h4>
+      <p class='text-sm text-gray-600'>Your cart is empty.</p>
+      <button id='closeCart' class='mt-4 w-full px-3 py-2 bg-gray-200 rounded-md'>Close</button>
+    </div>
+  </div>
+  <div id='toast' aria-live='polite' class='fixed bottom-4 right-4'></div>
+
+  <script>
+    // Theme toggle
+    const tBtn = document.getElementById('themeToggle');
+    if (tBtn) tBtn.addEventListener('click', ()=> document.documentElement.classList.toggle('dark'));
+    // Mobile menu
+    const mobileBtn = document.getElementById('mobileMenuButton');
+    const mobileMenu = document.getElementById('mobileMenu');
+    if (mobileBtn && mobileMenu) {
+      mobileBtn.addEventListener('click', ()=> mobileMenu.classList.toggle('hidden'));
+    }
+    // Cart modal
+    const openCart = document.getElementById('openCart');
+    const cartModal = document.getElementById('cartModal');
+    const closeCart = document.getElementById('closeCart');
+    if (openCart && cartModal) {
+      openCart.addEventListener('click', ()=> cartModal.classList.remove('hidden'));
+      closeCart.addEventListener('click', ()=> cartModal.classList.add('hidden'));
+    }
+    // Scroll reveal
+    const sections = document.querySelectorAll('section, main > section');
+    sections.forEach(sec => { sec.style.opacity='0'; sec.style.transform='translateY(20px)'; });
+    const observer = new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.style.opacity='1'; e.target.style.transform='translateY(0)'; e.target.style.transition='opacity 0.6s ease-out, transform 0.6s ease-out'; } }); }, { threshold: 0.1 });
+    sections.forEach(s => observer.observe(s));
+  </script>
+</body>
+</html>
