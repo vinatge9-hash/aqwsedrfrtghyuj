@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <title>Ember & Leaf Coffee - About</title>
+  <meta name='description' content='Learn the story of Ember & Leaf Coffee, our mission, and our cozy cafe & roastery.'>
+  <link rel='icon' href='https://pixabay.com/get/gefb94e6c44dce5c4fd213d79cbb66b35dc8d917a942e02514ee644c1771c0681a5b42d3a4d15fc7c8d474bd3d47b4f48a01dae0a14054088b32b6cc538974d96_640.jpg'>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <script>tailwind.config={darkMode:'class'}</script>
+</head>
+<body class='bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100'>
+  <header class='sticky top-0 z-50 bg-white/90 dark:bg-gray-900/90 border-b border-gray-200'>
+    <nav class='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8'>
+      <div class='flex items-center justify-between h-16'>
+        <a href='index.html' class='flex items-center space-x-2'>
+          <span class='w-6 h-6 rounded-full bg-amber-500 inline-block'></span>
+          <span class='font-semibold'>Ember & Leaf</span>
+        </a>
+        <div class='hidden md:flex items-center gap-4'>
+          <a href='index.html' class='text-gray-700 hover:text-amber-600'>Home</a>
+          <a href='about.html' class='text-gray-700 hover:text-amber-600'>About</a>
+          <a href='menu.html' class='text-gray-700 hover:text-amber-600'>Menu</a>
+          <a href='blog.html' class='text-gray-700 hover:text-amber-600'>Blog</a>
+          <a href='contact.html' class='text-gray-700 hover:text-amber-600'>Contact</a>
+        </div>
+        <button id='themeToggle' aria-label='Toggle dark mode' class='p-2 rounded-md bg-gray-100'>☀️</button>
+      </div>
+    </nav>
+  </header>
+  <main class='max-w-5xl mx-auto px-4 py-12'>
+    <section aria-labelledby='about-title' class='mb-6'>
+      <h1 id='about-title' class='text-4xl font-extrabold mb-4'>Our Story</h1>
+      <p class='text-lg text-gray-700 dark:text-gray-300'>Ember & Leaf started as a small roastery in Nadargul, inspired by cozy mornings and slow rituals. We source ethically, roast carefully, and build spaces where people can linger over great coffee.</p>
+    </section>
+    <section class='grid grid-cols-1 md:grid-cols-2 gap-8'>
+      <div class='rounded-lg bg-white dark:bg-gray-800 p-6 shadow'>
+        <h2 class='text-2xl font-semibold mb-2'>Mission</h2>
+        <p class='text-gray-700 dark:text-gray-200'>To craft approachable, seasonal coffee while fostering community and warmth in every cup.</p>
+      </div>
+      <div class='rounded-lg bg-white dark:bg-gray-800 p-6 shadow'>
+        <h2 class='text-2xl font-semibold mb-2'>Our Café & Roastery</h2>
+        <p class='text-gray-700 dark:text-gray-200'>A cozy space in Nadargul for tasting, learning, and connecting with fellow coffee lovers.</p>
+      </div>
+    </section>
+  </main>
+  <footer class='bg-gray-900 text-gray-100 py-8'>
+    <div class='max-w-7xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8'>
+      <div>
+        <h3 class='text-xl font-semibold'>Ember & Leaf</h3>
+        <p class='text-sm mt-2'>Nadargul, Telangana</p>
+        <p class='text-sm mt-2'>Open daily 7am - 7pm</p>
+      </div>
+      <nav class='space-y-2'>
+        <a href='index.html' class='block hover:underline'>Home</a>
+        <a href='menu.html' class='block hover:underline'>Menu</a>
+        <a href='blog.html' class='block hover:underline'>Blog</a>
+      </nav>
+      <form class='space-y-2'>
+        <input type='email' placeholder='Your email' class='w-full px-3 py-2 rounded-md'>
+        <button class='w-full px-3 py-2 bg-amber-500 text-white rounded-md'>Subscribe</button>
+      </form>
+    </div>
+    <hr class='border-t border-gray-700 mt-6'>
+    <p class='text-center text-sm mt-2'>&copy; 2025 Ember & Leaf Coffee</p>
+  </footer>
+  <div id='toast' aria-live='polite' class='fixed bottom-4 right-4'></div>
+  <script src='https://cdn.tailwindcss.com'></script>
+  <script>tailwind.config={darkMode:'class'};document.getElementById('themeToggle')?.addEventListener('click',()=>document.documentElement.classList.toggle('dark'));</script>
+</body>
+</html>
